@@ -43,6 +43,7 @@ public class UnitTest1Java8 {
         }
     }
 
+    @FunctionalInterface
     interface Condition {
         Boolean test(Person p);
     }
