@@ -1,5 +1,5 @@
 package lambda;
 
 public interface AddNumber {
-    public int Add(int a,int b);
+    public int perform(int a,int b);
 }
