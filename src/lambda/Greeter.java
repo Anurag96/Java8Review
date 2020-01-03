@@ -24,7 +24,7 @@ public class Greeter {
         //Creating a new instance of the class, to call the above two methods
         Greeter greeter = new Greeter();
 
-        //Providing an implementation (Inner Class) to the interface, this is basically writing an "Function as value", used in Java 7
+        //Providing an inline implementation (Inner Class) to the interface, this is basically writing an "Function as value", used in Java 7
         NoParameter innerClassGreeting = new NoParameter() {
             @Override
             public void perform() {
@@ -55,9 +55,12 @@ public class Greeter {
         greeter.greetNumber(divide);
 
         //Another example of Lambda expression, with parameters finding length of string
-        OneParameter stringlength=(String s)->s.length();
-        greeter.greetString(stringlength);
-    }
+        OneParameter stringlength=(s)->s.length();
+        System.out.println("The length again is : "+stringlength.perform("hello innerclass")); // 1. One way of calling it
+        greeter.greetString(stringlength);  // 2. Another way of calling it, just putting the value assigned to the greet method
+
+      }
+
 
 }
 
