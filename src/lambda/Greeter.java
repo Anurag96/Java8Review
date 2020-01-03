@@ -36,7 +36,7 @@ public class Greeter {
 
         //Alternate way to above method is using the lambda expression,
         // so here lambda expression instead of using the "Function as value", it assign whole function to variable
-        NoParameter lambdaGreeting = () -> System.out.println("hello lambda");
+        NoParameter lambdaGreeting = () -> System.out.println("hello lambda"); //*Note : the name of the type should be the same as the interface
         lambdaGreeting.perform();  // 1. One way of calling it
         greeter.greet(lambdaGreeting); // 2. Another way of calling it, just putting the value assigned to the greet method
 
