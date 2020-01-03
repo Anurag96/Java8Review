@@ -1,6 +1,6 @@
 package lambda;
 
-interface Greeting {
+interface NoParameter {
 
    public void perform();
 

@@ -1,5 +1,5 @@
 package lambda;
 
-public interface AddNumber {
+public interface TwoParameter {
     public int perform(int a,int b);
 }
