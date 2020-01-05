@@ -1,4 +1,4 @@
-package lambda;
+package excersise;
 
 import java.util.Arrays;
 import java.util.List;

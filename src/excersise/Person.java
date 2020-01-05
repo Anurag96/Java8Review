@@ -1,4 +1,4 @@
-package lambda;
+package excersise;
 
 public class Person {
     private String firstName;
