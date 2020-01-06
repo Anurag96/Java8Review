@@ -1,6 +1,6 @@
 package methodreference;
 
-import excersise.Person;
+ import excersise.Person;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,7 +27,10 @@ public class CollectionIterationExample {
             System.out.println(person);
         }
 
-        System.out.println("Using JAVA 8 Internal for each loop");
+        System.out.println("Using JAVA 8 Internal for each loop using lambda expression");
         personList.forEach(person -> System.out.println(person));
+
+        System.out.println("Using JAVA 8 Internal for each loop using method reference");
+        personList.forEach(System.out::println);
     }
 }
