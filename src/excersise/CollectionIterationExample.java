@@ -15,15 +15,17 @@ public class CollectionIterationExample {
                 new Person("Eharles", "Eickens", 26)
         );
 
-        for (int i = 0; i <= personList.size(); i++) {
+        System.out.println("Using for loop");
+        for (int i = 0; i < personList.size(); i++) {
             System.out.println(personList.get(i));
         }
 
-
+        System.out.println("Using external for each loop");
         for (Person person : personList) {
             System.out.println(person);
         }
 
+        System.out.println("Using JAVA 8 Internal for each loop");
         personList.forEach(person -> System.out.println(person));
     }
 }
